@@ -1,2 +1,16 @@
-def mergesort_inplace():
-    return 's'
+def mergesort(array):
+    midpoint = len(array)// 2 
+    left = array[:midpoint]
+    right = array[midpoint:]
+
+
+    mergesort(left)
+    mergesort(right)
+
+    
+
+
+    
+    
+
+    

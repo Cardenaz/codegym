@@ -1,51 +1,23 @@
-import random
+
+
 
 def quicksort_inplace(array):
-
-    
-
-
-    
-    sortedArray = []
-    picker = len(array)
-    pivot = random.randrange(0, len(array))
-    realPivot = array[pivot]
-    return realPivot
+    return 0
 
 
-def alternative1(array):
-    elements = len(array) 
 
-    
 
-def teacherMethod(array):
-    left, equal, right = [], [], []
-
-    if len(array) > 1: 
-        pivot = array[-1]
-
-        for value in array:
-            if value < pivot: 
-                left.append(value)
-            elif value == pivot: 
-                equal.append 
-            elif value > pivot: 
-                right.append(value)
-        
-        return teacherMethod(left) + equal + teacherMethod(right)
-    else: 
-        return array
-
-print(teacherMethod([1,5,3,6]))
+def partition(array, low, high): 
+    pivot = array[high]
+    i = low-1
+    for i in range(low, high): 
+        if array[i] < pivot:
+            i+=1 
+            array[i][array[j] = array[j]array[i]
 
 
 
 
 
-
-
-
-#consider one element as pivot
-#split elements -> larger values to right -- smaller to left
 
 
