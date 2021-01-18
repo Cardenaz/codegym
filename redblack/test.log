@@ -1,0 +1,24 @@
+
+INFO [L:59] 
+Testing if the class has the required methods. (['insert', 'remove', 'search', 'path', 'min', 'max', 'bfs'])
+
+INFO [L:67] The class has the required functions.
+
+INFO [L:74] Original list (size=24000,24000):
+
+INFO [L:78] Base list: (size=20000,20000):
+
+INFO [L:82] Remove list: (size=4000,4000):
+
+INFO [L:116] 
+Testing if the class can insert and remove correctly
+
+INFO [L:91] base insertremove list
+
+INFO [L:96] remove insertremove list
+
+INFO [L:100] mixed_cplist list
+
+INFO [L:104] insertremove list
+
+INFO [L:123] Insert and remove several items.
