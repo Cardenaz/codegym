@@ -1,10 +1,8 @@
-def quicksort_notinplace():
 
-    
 
-def teacherMethod(array):
+
+def quicksort_notinplace(array):
     left, equal, right = [], [], []
-
     if len(array) > 1: 
         pivot = array[-1]
 
@@ -16,10 +14,9 @@ def teacherMethod(array):
             elif value > pivot: 
                 right.append(value)
         
-        return teacherMethod(left) + equal + teacherMethod(right)
+        return quicksort_notinplace(left) + equal + quicksort_notinplace(right)
     else: 
         return array
 
-print(teacherMethod([23,12,95,17,17,34,45,96,-3]))
 
 

@@ -4,11 +4,11 @@ Testing if the class has the required methods. (['insert', 'remove', 'search', '
 
 INFO [L:67] The class has the required functions.
 
-INFO [L:74] Original list (size=24000,24000):
+INFO [L:74] Original list (size=48,48):
 
-INFO [L:78] Base list: (size=20000,20000):
+INFO [L:78] Base list: (size=40,40):
 
-INFO [L:82] Remove list: (size=4000,4000):
+INFO [L:82] Remove list: (size=8,8):
 
 INFO [L:116] 
 Testing if the class can insert and remove correctly
@@ -22,3 +22,9 @@ INFO [L:100] mixed_cplist list
 INFO [L:104] insertremove list
 
 INFO [L:123] Insert and remove several items.
+
+INFO [L:142] Test for existing items.
+
+ERROR [L:150] ERROR does not contain: 69
+
+ERROR [L:154] Error: the tree does not find the item that should be there.

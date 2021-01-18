@@ -1,6 +1,6 @@
 
 #some config
-SPEED_FACTOR =1
+SPEED_FACTOR =500
 LOG_LEVEL ='INFO'# Also DEBUG, INFO, WARNING, ...
 BASE_LIST_SIZE = 20000//SPEED_FACTOR
 REMOVE_LIST_SIZE = BASE_LIST_SIZE//5
@@ -593,8 +593,10 @@ def test_redblacktree(the_rbt):
 
 if __name__ == "__main__":
 
-    import red_black_tree as rbt        
-    the_rbt = rbt.RedBlackTree()
+    import red_black_tree as rbt    
+    import programwiz as pw    
+   # the_rbt = rbt.RedBlackTree()
+    the_rbt = pw.RedBlackTree()
     test_redblacktree(the_rbt)
 
 

@@ -1,20 +1,15 @@
 
 
 
+
 def quicksort_inplace(array):
-    return 0
-
-
-
-
-def partition(array, low, high): 
-    pivot = array[high]
-    i = low-1
-    for i in range(low, high): 
-        if array[i] < pivot:
-            i+=1 
-            array[i][array[j] = array[j]array[i]
-
+    if len(array) < 2: 
+        return array 
+    else: 
+        pivot = array[0]
+        less = [i for i in array[1:] if i <= pivot]
+        greater = [i for i in array[1:] if i > pivot]
+        return quicksort_inplace(less) + [pivot] + quicksort_inplace(greater)
 
 
 
