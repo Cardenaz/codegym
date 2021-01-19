@@ -32,7 +32,6 @@ class Heap:
             comparison = self.index(value)
             if self.heap[value] > self.heap[comparison]: 
                 self.heap[value], self.heap[comparison] = self.heap[comparison], self.heap[value],
-            
             value = comparison
     def balanceTree(self, value): 
         #balance while reaching the root node 
@@ -42,13 +41,12 @@ class Heap:
                 self.heap[value], self.heap[value//2] = self.heap[value//2], self.heap[value]
             #half of value 
             value = value//2 
-   
 def heapsort_notinplace(array): 
     heap = Heap()
     sorted_list = []
     for item in array: 
         heap.add(item)
-    for i in range(heap.length): 
+    for _ in range(heap.length): 
         minimum_value = heap.pop()
         sorted_list.append(minimum_value)
     return sorted_list
