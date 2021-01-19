@@ -209,12 +209,12 @@ def create_report(sortfunc_list):
 if __name__ == "__main__":
     from quicksort_inplace import quicksort_inplace  
     from quicksort_notinplace import quicksort_notinplace  
-    #from mergesort_inplace import mergesort_inplace  
-    #from mergesort_notinplace import mergesort_notinplace  
-    #from heapsort_inplace import heapsort_inplace  
-    #from heapsort_notinplace import heapsort_notinplace  
+   # from mergesort_inplace import mergesort_inplace  
+    from mergesort_notinplace import mergesort_notinplace  
+    from heapsort_inplace import heapsort_inplace  
+    from heapsort_notinplace import heapsort_notinplace  
 
-    quick_list = [python_sort,quicksort_inplace,quicksort_notinplace,]
+    quick_list = [python_sort,quicksort_inplace,quicksort_notinplace,mergesort_notinplace, heapsort_inplace, heapsort_notinplace]
     #sortfunc_list = [python_sort,quicksort_inplace,quicksort_notinplace, mergesort_inplace, mergesort_notinplace, heapsort_inplace,heapsort_notinplace]
     #create_report(sortfunc_list)
     create_report(quick_list)

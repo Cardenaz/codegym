@@ -1,7 +1,3 @@
-
-
-
-
 def quicksort_inplace(array):
     if len(array) < 2: 
         return array 

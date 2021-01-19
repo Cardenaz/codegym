@@ -1,11 +1,7 @@
-
-
-
 def quicksort_notinplace(array):
     left, equal, right = [], [], []
     if len(array) > 1: 
         pivot = array[-1]
-
         for value in array:
             if value < pivot: 
                 left.append(value)
